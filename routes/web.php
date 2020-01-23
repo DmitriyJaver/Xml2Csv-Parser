@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'XmlParserController@index');
+Route::post('/get-xml', 'XmlParserController@handleXml');
