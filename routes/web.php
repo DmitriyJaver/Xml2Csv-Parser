@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'XmlParserController@index')->name('welcome');
+Route::post('/get-csv', 'XmlParserController@getCsv');
